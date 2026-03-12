@@ -1,0 +1,119 @@
+/* Global Styles */
+.App {
+  min-height: 100vh;
+}
+
+.main-content {
+  min-height: calc(100vh - 56px);
+  padding-bottom: 2rem;
+}
+
+/* Task Card Styles */
+.task-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Button Styles */
+.btn-outline-custom {
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+}
+
+.btn-outline-custom:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+/* Loading Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Form Styles */
+.form-floating > .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Custom Alert Styles */
+.alert-custom {
+  border-left: 4px solid #0d6efd;
+  background-color: #f8f9fa;
+  border: none;
+}
+
+/* Navbar Custom Styles */
+.navbar-dark .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Card Header Custom */
+.card-header-custom {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+}
+
+/* Status Badge Styles */
+.status-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Priority Badge Styles */
+.priority-high {
+  background-color: #dc3545;
+  color: white;
+}
+
+.priority-medium {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.priority-low {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .task-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animation for page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
